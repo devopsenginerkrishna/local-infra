@@ -7,3 +7,7 @@ module "azurerm_storage_account" {
   source = "../../module/storage_account"
   stg_map = var.stg_map
 }
+module "azurerm_virtual_network" {
+  source = "../../module/vnet"
+  vnet_map = var.vnet_map
+}
